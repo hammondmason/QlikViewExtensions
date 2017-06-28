@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ExtensionObject  Path="LeafletJS" Label="LeafletJS" Description="The Open Source Leaflet.js Library" Type="object">
-  <Dimension Label="Dim1" Initial="City" TargetName="City"/>
-  <Dimension Label="Dim2" Initial="Longitude" TargetName="Longitude"/>
-  <Dimension Label="Dim3" Initial="Latitude" TargetName="Latitude"/>
-  <Dimension Label="Dim4" Initial="Population" TargetName="Population"/>
-  <Measurement Label="Measure1" Initial="" Expression="Count(City)"/>
+  
+  <Dimension Label="Dim1" Initial=""/>
+  <Dimension Label="Dim2" Initial=""/>
+  <Dimension Label="Dim3" Initial=""/>
+  <Measurement Label="Measure1" Initial=""/>
+  
   <Initiate Name="Caption.Text" Value="City Populations"/>
+  
+  <Initiate Name="Chart.Dimension.0.Field" Value="City"/>
+  <Initiate Name="Chart.Dimension.1.Field" Value="Longitude"/>
+  <Initiate Name="Chart.Dimension.2.Field" Value="Latitude"/>
+  <Initiate Name="Chart.Expression.0.0.Definition" Value="Sum(Population)"/>
+  
 </ExtensionObject>
