@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><ExtensionObject Path="ChartJS" Label="Chart.js" Description="Open source chart library" Type="object">
-  <Dimension Label="Dimension" Initial="City" DropTarget="City" />
-  <Measurement Label="Measure" Initial="Sum(Population)" />
-  <Initiate Name="Caption.Text" Value="Population by City" />
+  
+  <Dimension Label="Dimension" Initial=""/>
+  <Measurement Label="Measure" Initial=""/>
+  
+  <Initiate Name="Caption.Text" Value="Population by City"/>
+  <Initiate Name="Chart.Dimension.0.Field" Value="City"/>
+  <Initiate Name="Chart.Expression.0.0.Definition" Value="Sum(Population)"/>
+  
 </ExtensionObject>
