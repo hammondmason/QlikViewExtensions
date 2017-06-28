@@ -1,0 +1,8 @@
+load * inline [
+  City, Longitude, Latitude, Population
+  New York, 40.730610, -73.935242, 8.6
+  London, 51.509865, -0.118092, 8.6
+  HongKong, 22.279902, 114.189674, 7.4
+  Tokyo, 35.652832, 139.839478, 13.0
+  San Francisco, 37.733795, -122.446747, 0.9
+]; 
