@@ -20,7 +20,7 @@
                 var lng = parseFloat(_this.Data.Rows[i][1].text);
                 var lat = parseFloat(_this.Data.Rows[i][2].text);
                 var popn = _this.Data.Rows[i][3].text;
-                L.marker([lng, lat], {title: name + "\r\nPopulation: " + popn}).addTo(mymap);
+                L.marker([lng, lat], {title: name + "\r\nPopulation: " + popn + "m"}).addTo(mymap);
             }
 
         });
