@@ -20,7 +20,12 @@
                 var lng = parseFloat(_this.Data.Rows[i][1].text);
                 var lat = parseFloat(_this.Data.Rows[i][2].text);
                 var popn = _this.Data.Rows[i][3].text;
-                L.marker([lng, lat], {title: name + "\r\nPopulation: " + popn + "m"}).addTo(mymap);
+                var mkr = L.marker([lng, lat], {title: name + "\r\nPopulation: " + popn + "m"}).addTo(mymap);	
+                (function(myName) {
+                    mkr.on('click', function() {
+                        _this.Data.SelectTextsInColumn(0, true, myName);	
+		    });
+                )(name));
             }
 
         });
